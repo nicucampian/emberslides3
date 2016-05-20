@@ -1,0 +1,14 @@
+{{outlet}}
+{{#each items as |item|}}
+  {{#if item.isFolder}}
+    <div{{action 'updateQuery' item.name}}>
+      {{image-button-component imgUrl="../assets/work/folderIcon.jpg"}}
+      {{item.name}}
+    </div>
+  {{else}}
+    <div{{action 'updateQuery' item.name}}>
+      {{image-button-component imgUrl="../assets/work/jsIcon.jpg"}}
+      {{item.name}}
+    </div>
+  {{/if}}
+{{/each}}

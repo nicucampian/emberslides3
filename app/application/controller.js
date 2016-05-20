@@ -29,5 +29,8 @@ export default Ember.Controller.extend({
     handleRemoveSlide() {
       console.log('APEL CONTROLLER');
     },
+    handleRedirectSave() {
+      console.log("redirect to work route");
+    },
   },
 });
